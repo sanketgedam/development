@@ -18,45 +18,47 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta http-equip="refresh" content="5">
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equip="refresh" content="5">
 
 
-  <script src="https://kit.fontawesome.com/yourcode.js"></script>
 
-  <title>Smart Quiz</title>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Smart Quiz</title>
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/one-page-wonder.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 
-   <link href="loader.css" rel="stylesheet">
- <script src="loader.js"></script>
-  
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.min.css" rel="stylesheet">
+
+    <link href="loader.css" rel="stylesheet">
+     <link href="index.css" rel="stylesheet">
+    
 
 
-  
+
+
 
 </head>
 
 
-   <style> 
-input[type=text] {
-  width: 50%;
-  padding: 1.2px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
+<style>
+    input[type=text] {
+        width: 50%;
+        padding: 1.2px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
 </style>
 
 <body>
@@ -67,7 +69,7 @@ input[type=text] {
 
 
 
-  <!--  Reset Password Code
+    <!--  Reset Password Code
    
   <p>
         <a href="reset-password.php" class="btn btn-waring">Reset Your Password</a>
@@ -75,162 +77,123 @@ input[type=text] {
     </p> --!>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="welcome.php">Home</a>
-      <a class="navbar-brand" href="about us.html">About Us</a>
-      <a class="navbar-brand" href="#">Contact Us</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#"> <p><b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></p></a>
-          </li>
-          <li class="nav-item">
-           <a href="logout.php" class="nav-link">Log Out</a>
-</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header class="masthead text-center text-white">
-    <div class="masthead-content">
-      <div class="container">
-        <h1 class="masthead-heading mb-0">Smart Quiz</h1>
-        <h2 class="masthead-subheading mb-0"></h2>
-        <br>
-        <br>
-
-
-
-        <form>
- 
-  <input type="text" id="fname" name="fname" placeholder="Hey,You Search Here!">
-
-</form>
-
-
-
-
-
-        <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Search</a>
-      </div>
-    </div>
-    <div class="bg-circle-1 bg-circle"></div>
-    <div class="bg-circle-2 bg-circle"></div>
-    <div class="bg-circle-3 bg-circle"></div>
-    <div class="bg-circle-4 bg-circle"></div>
-  </header>
-
-  <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-        <H1> General Knowledge</H1>
-          </div>
-           </div>
-
-     
-       
-        <div class="col-lg-6 order-lg-1">
-          <div class="p-5">
-
-           <img class="img-fluid rounded-circle" src="img/62209b47-social-logo.png" alt="">
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="welcome.php">Home</a>
+            <a class="navbar-brand" href="about us.html">About Us</a>
+            <a class="navbar-brand" href="#">Contact Us</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <p><b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="logout.php" class="nav-link">Log Out</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
+
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
+            <div class="container">
+                <h1 class="masthead-heading mb-0">Smart Quiz</h1>
+                <h2 class="masthead-subheading mb-0"></h2>
+                <br>
+                <br>
+
+
+
+                <form>
+
+                    <input type="text" id="fname" name="fname" placeholder="Hey,You Search Here!">
+
+                </form>
+
+
+
+
+
+                <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Search</a>
+            </div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+
+     <div class="content-wrapper">
+        <div class="items-wrapper">
+            <div class="item-wrapper">
+                <div class="img-background" style="background-image: url(img/ricardo-gomez-angel.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="img/62209b47-social-logo.png" alt="">
+                    </div>
+                    <div class="logo-title">
+                        General Knowledge
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-wrapper">
+                <div class="img-background" style="background-image: url(img/hassler-mendoza.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="img/6255741e-internet-logo.png" alt="">
+                    </div>
+                    <div class="logo-title">
+                        Current Affairs
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-wrapper">
+                <div class="img-background" style="background-image: url(img/markus-spiske.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="img/a4414927-graphics-logo.png" alt="">
+                    </div>
+                    <div class="logo-title">
+                        Science & Technology
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-wrapper">
+                <div class="img-background" style="background-image: url(img/bill-oxford.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="img/e1d79e63-website-logo.png" alt="">
+                    </div>
+                    <div class="logo-title">
+                        Engineering
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </section>
 
-  <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="p-5">
-
-           <img class="img-fluid rounded-circle" src="img/6255741e-internet-logo.png" alt="">
-          </div>
+    <!-- Footer -->
+    <footer class="py-5 bg-black">
+        <div class="container">
+            <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2019</p>
         </div>
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-            <h1>Current Affairs</h1>
-           
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- /.container -->
+    </footer>
 
-
-
-
- <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="p-5">
-
-           <img class="img-fluid rounded-circle" src="img/a4414927-graphics-logo.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-            <h1>Science & Technology</h1>
-           
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-   <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="p-5">
-
-           <img class="img-fluid rounded-circle" src="img/e1d79e63-website-logo.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-            <h1>Engineering</h1>
-           
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  
-
-
-
-
-
-
-  <!-- Footer -->
-  <footer class="py-5 bg-black">
-    <div class="container">
-      <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="loader.js"></script>
 
 
 
