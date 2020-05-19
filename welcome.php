@@ -191,6 +191,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </footer>
 
     <!-- Bootstrap core JavaScript -->
+    <script src="index_main.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="loader.js"></script>
